@@ -1,0 +1,62 @@
+$blueColor: #2140E8;
+
+.checkboxInput:not(:checked),
+.checkboxInput:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+.checkboxInput + label{
+    line-height:24px;
+    margin-right:32px;
+}
+
+.checkboxInput:not(:checked)+label,
+.checkboxInput:checked+label {
+    position: relative;
+    padding-left: 32px;
+    cursor: pointer;
+}
+
+.checkboxInput:not(:checked)+label:before,
+.checkboxInput:checked+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #E0E2EA;
+}
+
+
+.checkboxInput:not(:checked)+label:after,
+.checkboxInput:checked+label:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background-color: $blueColor;
+    background-image: url('../../assets/icons/checkMark.svg');
+    z-index: 5;
+    background-position: center;
+    background-size: initial;
+    background-repeat: no-repeat;
+    transition: all 0.15s ease-in-out;
+
+}
+
+.checkboxInput:not(:checked)+label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.checkboxInput:checked+label:after {
+    opacity: 1;
+    transform: scale(1);
+}

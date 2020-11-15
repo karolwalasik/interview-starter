@@ -1,0 +1,23 @@
+.EmptyList{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 120px 0;
+    .emptyListHeader{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 16px;
+        text-align: center;
+        margin-bottom: 8px;
+        color: #1A1B1D;
+    }
+    .emptyListSubheader{
+        margin-top:0;
+        font-size: 14px;
+        line-height: 16px;
+        color: #9194A5;
+    }
+}

@@ -1,0 +1,74 @@
+.SingleProduct{
+    background: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom:32px;
+}
+.imageWrapper{
+    position:relative;
+    overflow:hidden;
+    height:170px;
+    
+    img{
+        width:100%;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+    .promoSign{
+        position:absolute;
+        width:75px;
+        height:24px;
+        background: #F9A52B;
+        top:24px;
+        left:0;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        z-index:10;
+        color: #fff;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+.ProductDetails{
+    padding: 16px 16px 24px;
+    .ProductName{
+        font-size: 18px;
+        color: #1A1B1D;
+        margin-bottom: 8px;
+        margin-top:0;
+        line-height:16px;
+    }
+    .ProductDescription{
+        font-size: 14px;
+        line-height: 16px;
+        color: #9194A5;
+        margin-bottom:32px;
+        min-height:64px;
+    }
+    .starsContainer{
+        margin-bottom: 18px;
+        .singleStar{
+            margin-right:10px;
+        }
+    }
+    .showDetailsButton{
+        background: #4460F7;;
+border-radius: 4px;
+display:flex;
+height: 38px;
+width:100%;
+justify-content:center;
+align-items:center;
+color: #fff;
+border: unset;
+outline:unset;
+&:hover{
+    cursor:pointer;
+    background: #2140E8;
+}
+    }
+}

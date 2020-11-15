@@ -1,0 +1,22 @@
+.PaginationView{
+    display:flex;
+    justify-content: space-between;
+    .pagesSelectors{
+        button{
+            min-width:20px;
+            padding:0 8px;
+            border:unset;
+            font-size: 14px;
+            line-height: 16px;
+            &.selected{
+                color: #4460F7;
+            }
+            &:hover{
+                color: #4460F7;
+            }
+        }
+    }
+    .firstLastPageButton{
+        border:unset;
+    }
+}

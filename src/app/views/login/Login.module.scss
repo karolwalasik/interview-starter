@@ -1,0 +1,122 @@
+@import '../../themeVariables.scss';
+
+.loginPageWrapper {
+    width: 100vw;
+    height: 100vh;
+    padding: 0 24px;
+    display: flex;
+
+    @media(min-width: 767px) {
+        padding: 0;
+    }
+
+    // .leftSection{
+
+
+    // }
+    .leftSection {
+        height: 100%;
+        width: 40%;
+        display: none;
+
+        @media(min-width: 767px) {
+            display: block;
+            background-image: url('../../assets/images/Bitmap.png');
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    .rightSection {
+        width: 100%;
+
+        @media(min-width: 767px) {
+            padding: 0 120px;
+            width: 60%;
+        }
+
+        .formContainer {
+            @media(min-width: 767px) {
+                display: flex;
+                height: 100%;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+        }
+
+    }
+}
+
+.logo {
+    margin: 40px 0 103px;
+
+    @media (max-height: 600px) {
+        margin-bottom: 50px;
+    }
+
+    @media(min-width: 767px) {
+        position: absolute;
+    }
+}
+
+.heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    color: $primaryColor;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+
+    @media(min-width: 767px) {
+        max-width: 496px;
+    }
+
+
+    label {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 8px;
+    }
+
+    input {
+        height: 48px;
+        margin-bottom: 32px;
+        padding: 16px;
+        border: 1px solid #E0E2EA;
+        box-sizing: border-box;
+        border-radius: 8px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #9194A5;
+    }
+
+    button {
+        height: 48px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #4460F7;
+        border-radius: 4px;
+        margin-top: 24px;
+    }
+}
+
+.passwordResetLink {
+    display: inline-block;
+    margin-top: 16px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+
+    text-decoration-line: underline;
+
+    color: #9194A5;
+}

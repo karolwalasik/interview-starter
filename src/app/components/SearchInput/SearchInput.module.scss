@@ -1,0 +1,36 @@
+.SearchInputContainer {
+    position: relative;
+    display: inline-block;
+       width:100%;
+    
+
+    .SearchInput {
+        height: 48px;
+        border: 1px solid #E0E2EA;
+        border-radius: 8px;
+        padding: 16px;
+        color: #1A1B1D;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        position: relative;
+        width:100%;
+        margin-bottom: 24px; 
+
+        &::placeholder {
+            color: #9194A5;
+        }
+    }
+
+    .SearchIcon {
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        right: 0;
+        pointer-events: none;
+        top: 0;
+        background: url('../../assets/icons/search.svg') center no-repeat;
+    }
+}
